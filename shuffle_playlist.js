@@ -1,6 +1,6 @@
 const playlist = ["A", "B", "C", "D", "E"]
 function screen(b,n,playlist){
-    for(i=0;i<=n;i++){
+    for(i=0;i<n;i++){
         if(b==='1'){ //button 1
             playlist.push(playlist[0])
             playlist.slice(1)
@@ -12,11 +12,10 @@ function screen(b,n,playlist){
             playlist[0] = playlist[1]
             playlist[1] = first
         } else if(b==='4'){ //button 4
-            break
+            return playlist
         }
     }
 }
 while(1){
-    screen(/*queary input for b*/,/*queary input for n*/,playlist)
-    return playlist
+    console.log(screen(prompt("b"),prompt("n"),playlist))
 }
