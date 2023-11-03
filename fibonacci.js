@@ -1,8 +1,8 @@
 function fib(p1, p2){
     if(p1===0){
-        console.log(0)
+        console.log(p1)
     } else if(p1&p2===1){
-        console.log(1)
+        console.log(p1)
     }
     p3 = p1 + p2
     console.log(p3)
