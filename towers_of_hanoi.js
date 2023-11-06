@@ -17,3 +17,4 @@ function mover(c1,c2,c3){
     
 }
 mover(c1,c2,c3)
+
