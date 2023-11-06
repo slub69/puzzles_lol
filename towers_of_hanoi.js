@@ -1,4 +1,4 @@
-const TowerOfHanoi = [1,2,3,4] //represents intial tower
+/* const TowerOfHanoi = [1,2,3,4] //represents intial tower
 let c1 = TowerOfHanoi //column 1
 let c2 = [] //column 2
 let c3 = [] //column 3
@@ -17,4 +17,14 @@ function mover(c1,c2,c3){
     
 }
 mover(c1,c2,c3)
+ */
 
+function hanoi(ndisk,start,destination,auxilary){
+    if (ndisk>0){
+        hanoi(ndisk-1,start,destination,auxilary)
+        console.log("move top disk from peg " + start + ' to peg ' + destination)    
+        hanoi(ndisk-1,start,destination,auxilary)
+    }
+}
+let n = 3
+hanoi(n,'A','B','C')
